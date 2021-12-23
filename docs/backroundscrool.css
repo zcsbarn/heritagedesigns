@@ -1,0 +1,9 @@
+.fixed-bg {
+    background-image: url("file:///C:/Users/Barn%20pc/Desktop/heritagedesigns.us/IMG_03.jpg");
+    min-height: 500px;
+    margin-top: 60px;
+    background-attachment: fixed;
+    background-position: top 100px right 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

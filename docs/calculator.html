@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Shannon's Calculator</title>
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
       <script>
          //function that display value
          function dis(val)
@@ -49,13 +50,30 @@
   
          input[type="button"]
          {
-         background-color:rgba(88, 87, 88, 0.555);
+         background-color:rgba(88, 87, 88, 0.712);
          border-radius: 10px;
          color: black;
          border: solid black 0px;
          width: 80px;
          height: 100px;
          }
+
+         input[type="clear"]
+         {
+         background-color:rgba(88, 87, 88, 0.555);
+         border-radius: 10px;
+         color: black;
+         border: solid rgb(252, 251, 251) 2px;
+         width: 350px;
+         height: 40px;
+         }
+
+         
+         input:hover {
+         border-radius: 8px;
+         background-color: rgba(172, 171, 171, 0.808);
+         color: black;
+  }
   
          input[type="text"]
          {
@@ -66,23 +84,14 @@
          height: 50px;
          }
 
-         input[type="clear"]
-         {
-         background-color:rgba(88, 87, 88, 0.555);
-         border-radius: 10px;
-         color: black;
-         border: solid black 2px;
-         width: 350px;
-         height: 40px;
-         }
-
+         
        
       </style>
    </head>
    <!-- create table -->
    <body>
     <table class="center">
-      <div class = title >My Own Calculator</div>
+      <div class = title >Shannon's Calculator</div>
       <table class="center">
             <tr>
             <td colspan="4"><input type="text" id="result"/></td>

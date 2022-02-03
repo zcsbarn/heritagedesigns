@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Shannon's Calculator</title>
-   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+   <style>
+      body {
+        background-image: url('IMG_CALC.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: bottom;
+      }
+      </style> 
+
       <script>
          //function that display value
          function dis(val)
@@ -32,7 +41,7 @@
           @media screen {
               
           }
-        }
+        
         
         table.center {
         margin-left: auto; 
@@ -40,41 +49,44 @@
         }
          .title{
          margin-bottom: 20px;
+         font-size: 25px;
          text-align:center;
-         width: 345px;
-         height: 30px;
          color:rgba(98, 100, 100, 0.562);
-         border: solid rgba(0, 0, 0, 0.493) 5px;
-         border-radius: 10px;
+ 
          }
   
          input[type="button"]
          {
-         background-color:rgba(88, 87, 88, 0.712);
+         background-color:rgb(134, 134, 134);
          border-radius: 10px;
          color: black;
          border: solid black 0px;
          width: 80px;
          height: 100px;
+         font-family: 'Times New Roman', Times, serif;
+         font-size: 18px;
          }
 
-         input[type="clear"]
+         button[type="clear"]
          {
-         background-color:rgba(88, 87, 88, 0.555);
+         background-color:rgba(145, 144, 145, 0.897);
          border-radius: 10px;
          color: black;
-         border: solid rgb(252, 251, 251) 2px;
          width: 350px;
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
          height: 40px;
+         font-size: 17px;
          }
 
          
          input:hover {
-         border-radius: 8px;
-         background-color: rgba(172, 171, 171, 0.808);
+         border-radius: 12.5px;
+         background-color: rgba(148, 147, 147, 0.808);
          color: black;
-  }
-  
+         font-size: 21px;
+         }
+
+      
          input[type="text"]
          {
          background-color:rgba(189, 186, 186, 0.288);
@@ -82,6 +94,14 @@
          border-radius: 10px;
          width: 338px;
          height: 50px;
+         font-size: 18px;
+         font-family: 'Times New Roman', Times, serif;
+         }
+
+         button:hover {
+         border-radius: 20px;
+         background-color: rgba(172, 171, 171, 0.808);
+         color: black;
          }
 
          
@@ -98,7 +118,7 @@
             </tr>
             <tr>
                 <!-- clr() function will call clr to clear all value -->
-                <td colspan="4"></td><input type="clear" value="CLICK HERE TO CLEAR # BAR" onclick="clr()"/> </td>
+                <td colspan="4"><button type="clear"onclick="clr()">Clear It!</button></td>
             </tr>
          <tr>
             <!-- create button and assign value to each button -->
@@ -106,7 +126,7 @@
             <td><input type="button" value="1" onclick="dis('1')"/> </td>
             <td><input type="button" value="2" onclick="dis('2')"/> </td>
             <td><input type="button" value="3" onclick="dis('3')"/> </td>
-            <td><input type="button" value="/" onclick="dis('/')"/> </td>
+            <td><input type="button" value="÷" onclick="dis('/')"/> </td>
             
          </tr>
          <tr>
@@ -126,12 +146,12 @@
             <td><input type="button" value="0" onclick="dis('0')"/> </td>
             <!-- solve function call function solve to evaluate value -->
             <td><input type="button" value="=" onclick="solve()"/> </td>
-            <td><input type="button" value="X" onclick="dis('*')"/> </td>
+            <td><input type="button" value="x" onclick="dis('*')"/> </td>
          </tr>
       </table>
-      <p style="font-family: Garamond, serif;font: size 15px;color:rgb(107, 104, 99);">&nbsp;&nbsp;Created solely for the enjoyment of acomplishing!<br>Not that there's a shortage of calculators out there!😁<br>
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copywright 2021<br>
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Shannon Zimmerman-</p>
-         <p style="font-family: Garamond, serif;font: size 10px;color:rgb(107, 104, 99);">Hosted On <a href="https://github.com/">GitHub</a></p>
+      <p style="font-family: Garamond, serif;text-align: center;font: size 15px;color:rgb(107, 104, 99);">Created solely for the enjoyment of acomplishing!<br>
+      Not that there's a shortage of calculators out there!😁<br>
+      Copywright 2021<br>-Shannon Zimmerman-</p>
+         <p style="font-family: Garamond, serif;text-align: center;font: size 10px;color:rgb(107, 104, 99);">Hosted On <a href="https://github.com/">GitHub</a></p>
    </body>
 </html>   
